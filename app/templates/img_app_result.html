@@ -1,0 +1,6 @@
+{% extends "base.html"%}
+{% block header %}Result{% endblock header%}
+{% block content %}
+  <a href="{{data}}" target="_blank" rel="noreferre noopener">Your Image</a>
+  <script src="{{url_for('static', filename='prevent_refresh.js')}}"></script>
+{% endblock content %}

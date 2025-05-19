@@ -1,0 +1,9 @@
+{% extends "base.html"%}
+{% block header%}Random Anime Image generator APP:{% endblock header%}
+{% block content%}
+  <form method="POST">
+    {{form.url.label}}{{form.url}}
+    {{form.submit()}}
+  </form>
+{% endblock content%}
+
